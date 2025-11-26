@@ -1,0 +1,11 @@
+/home/iuliia/emb_course/pw2-group11/reliable-serial/target/riscv32imc-unknown-none-elf/release/deps/rtt_target-0633c9af877619dd.d: /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtt-target-0.6.1/src/lib.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtt-target-0.6.1/src/debug.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtt-target-0.6.1/src/rtt.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtt-target-0.6.1/src/init.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtt-target-0.6.1/src/print.rs
+
+/home/iuliia/emb_course/pw2-group11/reliable-serial/target/riscv32imc-unknown-none-elf/release/deps/librtt_target-0633c9af877619dd.rlib: /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtt-target-0.6.1/src/lib.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtt-target-0.6.1/src/debug.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtt-target-0.6.1/src/rtt.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtt-target-0.6.1/src/init.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtt-target-0.6.1/src/print.rs
+
+/home/iuliia/emb_course/pw2-group11/reliable-serial/target/riscv32imc-unknown-none-elf/release/deps/librtt_target-0633c9af877619dd.rmeta: /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtt-target-0.6.1/src/lib.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtt-target-0.6.1/src/debug.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtt-target-0.6.1/src/rtt.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtt-target-0.6.1/src/init.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtt-target-0.6.1/src/print.rs
+
+/home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtt-target-0.6.1/src/lib.rs:
+/home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtt-target-0.6.1/src/debug.rs:
+/home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtt-target-0.6.1/src/rtt.rs:
+/home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtt-target-0.6.1/src/init.rs:
+/home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtt-target-0.6.1/src/print.rs:

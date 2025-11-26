@@ -1,0 +1,3 @@
+cargo:rustc-link-search=/home/iuliia/emb_course/pw2-group11/reliable-serial/target/riscv32imc-unknown-none-elf/release/build/esp32c3-904070be584f40f8/out
+cargo:rerun-if-changed=device.x
+cargo:rerun-if-changed=build.rs

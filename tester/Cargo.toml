@@ -1,0 +1,9 @@
+[package]
+name = "tester"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+the-protocol = { version = "0.1.0", path = "../the-protocol", features = ["host"] }
+the-protocol-serde = { version = "0.1.0", path = "../the-protocol-serde" }
+serial2 = "0.2.33"

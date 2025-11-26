@@ -1,0 +1,5 @@
+cargo:rerun-if-changed=./esp_config.yml
+cargo:rerun-if-changed=build.rs
+cargo:rustc-env=ESP_BACKTRACE_CONFIG_BACKTRACE_FRAMES=10
+cargo:rerun-if-env-changed=ESP_BACKTRACE_CONFIG_BACKTRACE_FRAMES
+cargo:rustc-check-cfg=cfg(backtrace_frames)

@@ -1,0 +1,10 @@
+/home/iuliia/emb_course/pw2-group11/reliable-serial/target/riscv32imc-unknown-none-elf/release/deps/rtic_common-887d0d9439dfb69d.d: /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtic-common-1.1.0/src/lib.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtic-common-1.1.0/src/dropper.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtic-common-1.1.0/src/wait_queue.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtic-common-1.1.0/src/waker_registration.rs
+
+/home/iuliia/emb_course/pw2-group11/reliable-serial/target/riscv32imc-unknown-none-elf/release/deps/librtic_common-887d0d9439dfb69d.rlib: /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtic-common-1.1.0/src/lib.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtic-common-1.1.0/src/dropper.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtic-common-1.1.0/src/wait_queue.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtic-common-1.1.0/src/waker_registration.rs
+
+/home/iuliia/emb_course/pw2-group11/reliable-serial/target/riscv32imc-unknown-none-elf/release/deps/librtic_common-887d0d9439dfb69d.rmeta: /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtic-common-1.1.0/src/lib.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtic-common-1.1.0/src/dropper.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtic-common-1.1.0/src/wait_queue.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtic-common-1.1.0/src/waker_registration.rs
+
+/home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtic-common-1.1.0/src/lib.rs:
+/home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtic-common-1.1.0/src/dropper.rs:
+/home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtic-common-1.1.0/src/wait_queue.rs:
+/home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rtic-common-1.1.0/src/waker_registration.rs:

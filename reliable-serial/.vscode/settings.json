@@ -1,0 +1,6 @@
+// Useful VS Code settings, provided for convenience
+{
+    "rust-analyzer.cargo.target": "riscv32imc-unknown-none-elf",
+    // This is one way of preventing the error about "can't find crate for test"
+    "rust-analyzer.check.allTargets": false,
+}

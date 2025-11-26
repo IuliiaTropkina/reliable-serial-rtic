@@ -1,0 +1,44 @@
+[package]
+name = "reliable-serial"
+version = "0.1.0"
+authors = [
+    # TODO: fill in the authors here
+]
+edition = "2021"
+
+[dependencies]
+esp-backtrace = { version = "0.17.0", features = [
+    "esp32c3",
+    "exception-handler",
+    "panic-handler",
+    "println",
+] }
+# LOCKED(esp-hal): esp-hal-smartled v0.16.0 depends on esp-hal v1.0.0-rc.0
+esp-hal = { version = "=1.0.0-rc.0", features = ["esp32c3", "unstable"] }
+esp-println = { version = "0.15.0", features = ["esp32c3"] }
+panic-rtt-target = "0.2.0"
+rtic = { git = "https://github.com/hegza/rtic", branch = "deploy/comp-ce-340-2025", features = ["esp32c3", "riscv-esp32c3-backend"] }
+rtic-monotonics = { git = "https://github.com/hegza/rtic", branch = "deploy/comp-ce-340-2025", features = ["esp32c3-systimer"] }
+rtic-sync = "1.4.0"
+the-protocol = { path = "../the-protocol" }
+the-protocol-serde = { path = "../the-protocol-serde" }
+# LOCKED(esp32c3): esp-hal v1.0.0-rc.0 & Henri's RTIC hotfix for v2.20 are set to depend on esp32c3 v0.30.0
+esp32c3 = "=0.30.0"
+esp-hal-smartled = { version = "0.16.0", features = ["esp32c3"] }
+rtt-target = "0.6.1"
+smart-leds = "0.4.0"
+
+[profile.dev]
+# Default settings for debug are too slow for any reasonable purpose. Therefore, always build with
+# some optimization.
+opt-level = "s"
+
+[profile.release]
+# LLVM works better single thread at a time
+codegen-units = 1
+debug = 2
+debug-assertions = false
+incremental = false
+lto = 'fat'
+opt-level = 's'
+overflow-checks = false

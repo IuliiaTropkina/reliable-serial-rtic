@@ -1,0 +1,14 @@
+/home/iuliia/emb_course/pw2-group11/reliable-serial/target/release/deps/serde-93a70c50b5b078c3.d: /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/iuliia/emb_course/pw2-group11/reliable-serial/target/release/build/serde-90bc7020de4d5c60/out/private.rs
+
+/home/iuliia/emb_course/pw2-group11/reliable-serial/target/release/deps/libserde-93a70c50b5b078c3.rlib: /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/iuliia/emb_course/pw2-group11/reliable-serial/target/release/build/serde-90bc7020de4d5c60/out/private.rs
+
+/home/iuliia/emb_course/pw2-group11/reliable-serial/target/release/deps/libserde-93a70c50b5b078c3.rmeta: /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/iuliia/emb_course/pw2-group11/reliable-serial/target/release/build/serde-90bc7020de4d5c60/out/private.rs
+
+/home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/home/iuliia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/home/iuliia/emb_course/pw2-group11/reliable-serial/target/release/build/serde-90bc7020de4d5c60/out/private.rs:
+
+# env-dep:OUT_DIR=/home/iuliia/emb_course/pw2-group11/reliable-serial/target/release/build/serde-90bc7020de4d5c60/out
