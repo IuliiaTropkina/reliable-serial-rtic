@@ -14,7 +14,6 @@ mod app {
         time::Duration,
         delay::Delay,
     };
-
     use core::iter;
     use rtic_monotonics::esp32c3::prelude::*;
     use esp_hal_smartled::{smart_led_buffer, SmartLedsAdapter, buffer_size};
@@ -42,6 +41,7 @@ mod app {
         counter: u32,
         blinking: bool,
         rgb_on: bool,
+        hour: u8,
     }
 
     impl AppState {
@@ -50,6 +50,7 @@ mod app {
                 counter: 0,
                 blinking: false,
                 rgb_on: false,
+                hour: 0
             }
         }
     }
@@ -94,6 +95,7 @@ mod app {
         let avg_interval = Duration::from_millis(1000);
 
         let rgb_led = SmartLedsAdapter::new(rmt.channel0, peripherals.GPIO2, rmt_buffer);
+        rgb::spawn().ok();
 
         (
             Shared { state: AppState::new() },
@@ -111,9 +113,37 @@ mod app {
     #[task(shared = [state], local = [rgb_led])]
     async fn rgb(mut cx: rgb::Context) {
 
-        let light_blue = RGB8 { r: 80, g: 180, b: 255 };
 
-        cx.local.rgb_led.write(brightness(core::iter::once(light_blue), 10)).unwrap();
+
+
+
+        let off_color = RGB8 { r: 0, g: 0, b: 0 };
+
+        loop {
+            let enable_rgb = cx.shared.state.lock(|s| s.rgb_on);
+
+            if enable_rgb {
+                let hour: u8 = cx.shared.state.lock(|s| s.hour); 
+
+                let color = match hour {
+                    3..=9   => RGB8 { r: 0xF8, g: 0xF3, b: 0x2B }, // Dawn, Aureolin
+                    9..=15  => RGB8 { r: 0x9C, g: 0xFF, b: 0xFA }, // Noon, Ice blue
+                    15..=21 => RGB8 { r: 0x05, g: 0x3C, b: 0x5E }, // Evening, Indigo dye
+                    21..=24 => RGB8 { r: 0x31, g: 0x08, b: 0x1F }, // Night, Dark purple
+                    0..=3 => RGB8 { r: 0x31, g: 0x08, b: 0x1F }, // Night, Dark purple
+                    _       => RGB8 { r: 0, g: 0, b: 0 },
+                };
+                cx.local.rgb_led.write(brightness(core::iter::once(color), 10)).unwrap();
+                Mono::delay(200.millis()).await; 
+
+            } else {
+                cx.local.rgb_led.write(brightness(core::iter::once(off_color), 10)).unwrap();
+                Mono::delay(200.millis()).await; 
+
+            }
+        }
+
+        
 
     }
     
@@ -144,13 +174,14 @@ mod app {
             2 => Command::C3EnableBlink,
             3 => Command::C4DisableBlink,
             4 => Command::C5EnableRgb,
-            5 => Command::C6DisableRgb,
-            6 => Command::C9Counter,
+            5 => Command::C8SetDateTime,
+            6 => Command::C6DisableRgb,
+            7 => Command::C9Counter,
             _ => Command::C1Reset,
         };
 
-        *cx.local.next_cmd = (*cx.local.next_cmd + 1) % 7;
-        rprintln!("ncrement → counter={}", *cx.local.next_cmd);
+        *cx.local.next_cmd = (*cx.local.next_cmd + 1) % 8;
+        
 
         cx.shared.state.lock(|s| {
             match cmd {
@@ -173,11 +204,15 @@ mod app {
                 Command::C5EnableRgb => {
                     s.rgb_on = true;
                     rprintln!("C5 EnableRgb");
-                    rgb::spawn().ok();
+
                 }
                 Command::C6DisableRgb => {
                     s.rgb_on = false;
                     rprintln!("C6 DisableRgb");
+                }
+                Command::C8SetDateTime => {
+                    s.hour = 15;
+                    rprintln!("C6 SetDateTime");
                 }
                 Command::C9Counter => {
                     rprintln!("C9 Counter → {}", s.counter);
